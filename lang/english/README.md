@@ -4,7 +4,7 @@ This module provides simple operations with API TraderNet
 
 https://tradernet.ru/
 
-#Simple Usage
+# Simple Usage
 ```python
 from tradernet import TraderNetAPI
 from tradernet.config import read_config
@@ -22,7 +22,7 @@ data = api.v2.send_request(
 )
 ```
 
-##Documentation
+## Documentation
 
 You can find documentation for v1 api methods and socket here (russian):
 
