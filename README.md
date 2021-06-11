@@ -1,4 +1,4 @@
-<p style="text-align:center">Русский | <a href=https://github.com/youlooknicetoday/tradernet/tree/master/lang/english> English</a></p>
+<div style="text-align:center">Русский | <a href=https://github.com/youlooknicetoday/tradernet/tree/master/lang/english> English</a></div>
 
 Данный модуль явлется оберктой вокруг API TraderNet
 
