@@ -1,4 +1,4 @@
-<div style="text-align:center"><a href=https://github.com/youlooknicetoday/tradernet> Русский </a>| English</div>
+<p align="center"><a href=https://github.com/youlooknicetoday/tradernet> Русский </a>| English</p>
 
 This module provides simple operations with API TraderNet
 
