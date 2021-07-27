@@ -8,9 +8,8 @@ https://tradernet.ru/
 Инициализация параметров может быть осуществлена из файла конфига, лежащего рядом со скриптом
 ```python
 from tradernet import TraderNetAPI
-from tradernet.config import read_config
 
-api = TraderNetAPI(read_config('api.ini'))
+api = TraderNetAPI.from_config('api.ini')
 ```
 Или можно напрямую передать в экземпляр
 ```python
