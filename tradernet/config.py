@@ -1,13 +1,19 @@
 import configparser
-from pathlib import Path
+from dataclasses import dataclass, asdict
 
 
-def read_config(path: Path = None):
+@dataclass
+class Config:
+    apikey: str
+    secret: str
+
+    @property
+    def representation(self):
+        return asdict(self)
+
+
+def load_config(path):
     config = configparser.ConfigParser()
-    if path and Path.exists(path):
-        config.read(path)
-    elif not path and (path := Path.joinpath(Path.cwd(), 'api.ini')).exists():
-        config.read(path)
-    else:
-        raise FileNotFoundError
-    return config['tradernet'].values()
+    config.read(path)
+    return Config(**config['tradernet'])
+

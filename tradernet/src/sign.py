@@ -17,4 +17,4 @@ def _pre_sign(dict_: dict):
         if isinstance(value, dict):
             value = _pre_sign(value)
         result.append('%s=%s' % (key, value))
-    return '&'.join(string for string in result)
+    return '&'.join(result)
